@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .absolute
+        {
+            border-style: dashed;
+            height: 150px;
+            width:150px;
+            position:absolute;
+            left:150px;
+            top:100px;
+            background-color: pink;
+            transition: width 3s linear;
+        }
+        .relative
+        {
+            position: relative;
+            top:300px;
+            border-style:solid;
+            width:500px;
+            height:500px;
+        }
+        .absolute:hover
+        {
+            width:300px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="absolute">This is absolute</div>
+    <div class="relative"><p class="absolute">This is relative</p></div>    
+</body>  
+</body>
+</html>
